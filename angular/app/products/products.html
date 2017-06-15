@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="container-fluid">
+        <h2>Products</h2>
+        <p>List of Products</p>
+        <table class="col-md-2 table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    {{item._id}}
+                    <td><a href={{"/#!/product/"+item._id}}>{{item.title}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

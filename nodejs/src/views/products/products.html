@@ -1,0 +1,24 @@
+{% extends "index2.html" %} {% block content %}
+<div class="card">
+    <div class="container-fluid">
+        <h2>Products</h2>
+        <p>List of Products</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in products %}
+                <tr>
+                    <td>
+                        <a href={{ "/products/"+item._id}}>{{item.title}}</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

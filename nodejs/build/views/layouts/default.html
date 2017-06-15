@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %}{{ page.title if page.title}} {% endblock %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        {% block styles %}{% endblock %}
+    </head>
+    <body class="main-wrap">
+        {% include "../includes/header.html" %}
+        <div class="content-wrap">
+            {% block content %}
+            {% endblock %}
+        </div>
+        {% include "../includes/footer.html" %}
+        {% block extra_js %}{% endblock %}
+    </body>
+</html>

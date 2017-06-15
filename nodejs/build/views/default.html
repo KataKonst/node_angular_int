@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %}{{ page.title if page.title}} {% endblock %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+        <link href="/res/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+        {% block styles %}{% endblock %}
+        {% include "header.html" %}
+
+    </head>
+    <body class="main-wrap">
+        <div class="content-wrap">
+            {% block content %}
+            {% endblock %}
+        </div>
+        {% include "footer.html" %}
+        {% block extra_js %}{% endblock %}
+    </body>
+</html>

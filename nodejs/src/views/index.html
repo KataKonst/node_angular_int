@@ -1,0 +1,11 @@
+{% extends "template/template.html" %} {% block content %}
+<div class="card">
+    <div class="container-fluid">
+        <h4 class="page-header">Welcome</h4>
+        <div *ngFor="let chart of data" class="col-md-6">
+            <h4>{{chart.labels}}</h4>
+            <p-chart type="bar" [data]="chart" [options]="options"></p-chart>
+        </div>
+    </div>
+</div>
+{% endblock %}

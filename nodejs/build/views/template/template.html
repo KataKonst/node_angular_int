@@ -1,0 +1,30 @@
+<head>
+  <link href="/res/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="/res/css/style.css" rel="stylesheet">
+  <link href="/res/css/offset.css" rel="stylesheet">
+  <link href="/res/css/light-bootstrap-dashboard.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    {% include "navigation/sidebar.html" %}
+  </div>
+  <div class="main-panel">
+    <div id="wrapper">
+      {% include "navigation/navbar.html" %}
+    </div>
+    <div class="main-content">
+      <div class="content">
+        {% block content %} {% endblock %}
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/res/js/light.js"></script>
+  <script src="/res/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+
