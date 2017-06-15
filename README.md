@@ -7,7 +7,6 @@ Running Instructions.
 ```
 sudo npm install npm -g
 npm install -g gulp
-npm install nunjucks
 npm install -g nodemon
 npm install
 
