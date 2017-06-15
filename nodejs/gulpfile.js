@@ -58,7 +58,7 @@ gulp.task('clean', function (cb) {
     del([paths.buildDir, paths.distDir], cb);
 });
 
-gulp.task('build', ['copyfont','copyresjs', 'copyrescss', 'copyboot', 'build-html', 'build-css', 'build-js', 'build-images', 'build-favicon', 'build-fonts'], function (cb) {
+gulp.task('build', ['copyfont', 'copyresjs', 'copyrescss', 'copyboot', 'build-html', 'build-css', 'build-js', 'build-images', 'build-favicon', 'build-fonts'], function (cb) {
     nodemonServerInit();
 });
 
