@@ -11,7 +11,7 @@ npm install nunjucks
 npm install -g nodemon
 npm install
 
-gulp-run the app
+gulp       
 ```
 
 #Angular app
