@@ -5,7 +5,7 @@ Running Instructions.
 #Nunjucks app
 
 ```
-sudo npm install npm -g
+npm install npm -g
 npm install -g gulp
 npm install -g nodemon
 npm install
