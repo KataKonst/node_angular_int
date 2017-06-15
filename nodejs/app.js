@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 var routes = require('./src/routes/index');
 var products = require('./src/routes/products');
 var contact = require('./src/routes/contact');
-app.set('port', 8000);
+app.set('port', 9000);
 
 nunjucks.configure(app.get('views'), {
     autoescape: true,
